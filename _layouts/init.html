@@ -11,12 +11,13 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
   padding: 500px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
+  transition: .2s ease-in-out 0s;
 }
 
 #audio:hover{
   background-color: #F4DF71;
+  transform: scale(1.25)
 }
-
 
 #full-size{
   height:100%;
@@ -30,6 +31,8 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
   padding: 500px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
+  transition: .2s ease-in-out 0s;
+
 }
 
 
@@ -47,13 +50,9 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 /* Add a background color on hover */
 .btn-group button:hover {
   background-color: #9471F4;
+  transform: scale(1.25)
+
 }
-
-/* COISAS A FAZER: */
-/* https://matthewjamestaylor.com/2-column-layouts */
-/* escolher palete de cores - nao escolher ao calhas, isto faz grande impacto */
-/* escolher tipo de letra */
-
 
 .text {
   text-align: center
@@ -63,21 +62,16 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 
 
 <body>
-<h2 class="text">XIBITA</h2>
 
 <div id="full-size">
 
   <div class="btn-group" style="width:100%">
+    <button style="width:50%" id="audio"> Áudio</button>
 
-    <button style="width:50%" id="audio" href="/"> Áudio</button>
-
-    <button style="width:50%" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Vídeo - don't click me :) </button>
-  
+    <button style="width:50%">Vídeo</button>
   </div>
 
 </div>
-
-
 
 </body>
 </html>
