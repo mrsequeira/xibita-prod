@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+<style>
+
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+#full-size{
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 500px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+</style>
+<body>
+
+<div id="full-size">
+<div class="btn-group" style="width:100%">
+  <button style="width:50%">Áudio</button>
+  <button style="width:50%">Vídeo</button>
+</div>
+</div>
+
+
+
+</body>
+</html>
