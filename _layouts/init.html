@@ -3,19 +3,35 @@
 <style>
 
 html,body{ margin:0; padding:0; height:100%; width:100%; }
+
+#audio {
+  background-color: #71F4B0; /* Red background */
+  border: 1px solid white; /* Green border */
+  color: white; /* White text */
+  padding: 500px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+#audio:hover{
+  background-color: #F4DF71;
+}
+
+
 #full-size{
   height:100%;
   width:100%;
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
 }
 .btn-group button {
-  background-color: #04AA6D; /* Green background */
-  border: 1px solid green; /* Green border */
+  background-color: #71B6F4; /* Green background */
+  border: 1px solid white; /* Green border */
   color: white; /* White text */
   padding: 500px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
 }
+
 
 /* Clear floats (clearfix hack) */
 .btn-group:after {
@@ -30,16 +46,33 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color: #3e8e41;
+  background-color: #9471F4;
 }
+
+/* COISAS A FAZER: */
+/* https://matthewjamestaylor.com/2-column-layouts */
+/* escolher palete de cores - nao escolher ao calhas, isto faz grande impacto */
+/* escolher tipo de letra */
+
+
+.text {
+  text-align: center
+}
+
 </style>
+
+
 <body>
+<h2 class="text">XIBITA</h2>
 
 <div id="full-size">
-<div class="btn-group" style="width:100%">
-  <button style="width:50%">Áudio</button>
-  <button style="width:50%">Vídeo</button>
-</div>
+
+  <div class="btn-group" style="width:100%">
+    <button style="width:50%" id="audio"> Áudio</button>
+
+    <button style="width:50%">Vídeo</button>
+  </div>
+
 </div>
 
 
