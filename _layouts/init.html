@@ -4,14 +4,10 @@
 
 html,body{ margin:0; padding:0; height:100%; width:100%; }
 
+
+/* Overwrite css from button */
 #audio {
   background-color: #71F4B0; /* Red background */
-  border: 1px solid white; /* Green border */
-  color: white; /* White text */
-  padding: 500px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
-  transition: .2s ease-in-out 0s;
 }
 
 #audio:hover{
@@ -24,6 +20,7 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
   width:100%;
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
 }
+
 .btn-group button {
   background-color: #71B6F4; /* Green background */
   border: 1px solid white; /* Green border */
@@ -31,8 +28,8 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
   padding: 500px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  transition: .2s ease-in-out 0s;
-
+  transition: .5s ease-in-out 0s;
+  font-size: 25px;
 }
 
 
@@ -66,9 +63,9 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 <div id="full-size">
 
   <div class="btn-group" style="width:100%">
-    <button style="width:50%" id="audio"> Áudio</button>
+    <button style="width:50%" id="audio" href="/"> Áudio</button>
 
-    <button style="width:50%">Vídeo</button>
+    <button style="width:50%" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Vídeo</button>
   </div>
 
 </div>
